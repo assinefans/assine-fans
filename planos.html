@@ -1,52 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Planos - Assine Fans</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body{font-family:Arial;margin:0;background:#fff;text-align:center}
-.logo{margin:40px;font-size:42px;font-weight:700}
-.assine{color:#0b2c44}
-.fans{color:#ff4fa3}
-.cards{display:flex;gap:20px;justify-content:center;flex-wrap:wrap}
-.card{border:1px solid #eee;border-radius:10px;padding:30px;width:260px}
-.price{font-size:28px;margin:20px 0}
-.cta{background:#ff4fa3;color:#fff;padding:12px 25px;border-radius:8px;text-decoration:none}
-a{display:inline-block;margin-top:15px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AssineFans</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 30px 16px;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .pink {
+      color: #ff5fa2;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .plano-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 28px 20px;
+      margin-bottom: 24px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .plano-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .preco {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .btn-syncpay {
+      background-color: #ff5fa2;
+      color: #ffffff;
+      border: none;
+      width: 100%;
+      padding: 16px 0;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .btn-syncpay:hover {
+      opacity: 0.9;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="logo">
-<span class="assine">Assine</span><span class="fans">Fans</span>
-</div>
+  <div class="container">
+    <h1>Assine<span class="pink">Fans</span></h1>
+    <h2>Escolha seu plano</h2>
 
-<h1>Escolha seu plano</h1>
+    <!-- PLANO MENSAL -->
+    <div class="plano-card">
+      <h3>Mensal</h3></h3>
+      <p class="preco">R$ 29,90</p>
 
-<div class="plano-card">
-  <h3>Mensal</h3>
-  <p class="preco">R$ 29,90</p>
+      <a href="https://app.syncpayments.com.br/payment-link/a0f0aca8-30c0-4ab6-875a-4a657ec6d1a9" target="_blank" rel="noopener noreferrer">
+        <button class="btn-syncpay">Assinar via SyncPay</button>
+      </a>
+    </div>
 
-  <a href="https://app.syncpayments.com.br/payment-link/a0f0aca8-30c0-4ab6-875a-4a657ec6d1a9" target="_blank" rel="noopener noreferrer">
-    <button class="btn-plano">
-      Assinar via SyncPay
-    </button>
-  </a>
-</div>
-  
-  <div class="card">
-    <h3>Trimestral</h3>
-    <div class="price">R$79,90</div>
-    <a class="cta" href="https://syncpay.com.br">Assinar via SyncPay</a>
+    <!-- PLANO TRIMESTRAL -->
+    <div class="plano-card">
+      <h3>Trimestral</h3>
+      <p class="preco">R$ 79,90</p>
+
+      <a href="COLE_AQUI_O_LINK_DA_SYNCPAY_TRIMESTRAL" target="_blank" rel="noopener noreferrer">
+        <button class="btn-syncpay">Assinar via SyncPay</button>
+      </a>
+    </div>
+
+    <!-- PLANO ANUAL -->
+    <div class="plano-card">
+      <h3>Anual</h3>
+      <p class="preco">R$ 219,90</p>
+
+      <a href="COLE_AQUI_O_LINK_DA_SYNCPAY_ANUAL" target="_blank" rel="noopener noreferrer">
+        <button class="btn-syncpay">Assinar via SyncPay</button>
+      </a>
+    </div>
+
   </div>
-
-  <div class="card">
-    <h3>Anual</h3>
-    <div class="price">R$219,90</div>
-    <a class="cta" href="https://syncpay.com.br">Assinar via SyncPay</a>
-  </div>
-</div>
 
 </body>
 </html>
