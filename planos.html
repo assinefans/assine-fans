@@ -22,7 +22,7 @@
 
     h1 {
       font-size: 32px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .pink {
@@ -30,8 +30,9 @@
     }
 
     h2 {
-      font-size: 20px;
+      font-size: 18px;
       margin-bottom: 30px;
+      color: #444;
     }
 
     .plano-card {
@@ -40,18 +41,43 @@
       padding: 28px 20px;
       margin-bottom: 24px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      position: relative;
+    }
+
+    .mais-vendido {
+      border: 2px solid #ff5fa2;
+      transform: scale(1.03);
+    }
+
+    .selo {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ff5fa2;
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
     }
 
     .plano-card h3 {
       font-size: 22px;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       font-weight: 600;
+    }
+
+    .descricao {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 14px;
     }
 
     .preco {
       font-size: 32px;
       font-weight: 700;
-      margin-bottom: 24px;
+      margin-bottom: 18px;
     }
 
     .btn-syncpay {
@@ -70,6 +96,18 @@
       opacity: 0.9;
     }
 
+    .garantia {
+      font-size: 12px;
+      color: #777;
+      margin-top: 6px;
+    }
+
+    .seguranca {
+      font-size: 12px;
+      color: #555;
+      margin-top: 10px;
+    }
+
     a {
       text-decoration: none;
     }
@@ -80,36 +118,49 @@
 
   <div class="container">
     <h1>Assine<span class="pink">Fans</span></h1>
-    <h2>Escolha seu plano</h2>
+    <h2>Acesso completo • Cancele quando quiser</h2>
 
     <!-- PLANO MENSAL -->
     <div class="plano-card">
-      <h3>Mensal</h3></h3>
+      <h3>Plano Mensal</h3>
+      <p class="descricao">Ideal para testar o conteúdo</p>
       <p class="preco">R$ 29,90</p>
 
       <a href="https://app.syncpayments.com.br/payment-link/a0f0aca8-30c0-4ab6-875a-4a657ec6d1a9" target="_blank" rel="noopener noreferrer">
-        <button class="btn-syncpay">Assinar via SyncPay</button>
+        <button class="btn-syncpay">Assinar agora</button>
       </a>
+
+      <p class="garantia">Renovação mensal automática</p>
+      <p class="seguranca">🔒 Pagamento 100% seguro • Processado pela SyncPay</p>
     </div>
 
     <!-- PLANO TRIMESTRAL -->
-    <div class="plano-card">
-      <h3>Trimestral</h3>
+    <div class="plano-card mais-vendido">
+      <div class="selo">⭐ MAIS VENDIDO</div>
+      <h3>Plano Trimestral</h3>
+      <p class="descricao">Mais economia + acesso contínuo</p>
       <p class="preco">R$ 79,90</p>
 
       <a href="https://app.syncpayments.com.br/payment-link/a0f0bd7e-e26c-4b55-9db1-f6f7d2183034" target="_blank" rel="noopener noreferrer">
-        <button class="btn-syncpay">Assinar via SyncPay</button>
+        <button class="btn-syncpay">Quero o mais vantajoso</button>
       </a>
+
+      <p class="garantia">Economize em relação ao mensal</p>
+      <p class="seguranca">🔒 Pagamento 100% seguro • Pix e cartão • Dados protegidos</p>
     </div>
 
     <!-- PLANO ANUAL -->
     <div class="plano-card">
-      <h3>Anual</h3>
+      <h3>Plano Anual</h3>
+      <p class="descricao">Máxima economia no ano</p>
       <p class="preco">R$ 219,90</p>
 
       <a href="https://app.syncpayments.com.br/payment-link/a0f0c4f9-6ce3-4f4a-bc29-049e7db2e18f" target="_blank" rel="noopener noreferrer">
-        <button class="btn-syncpay">Assinar via SyncPay</button>
+        <button class="btn-syncpay">Garantir acesso anual</button>
       </a>
+
+      <p class="garantia">Melhor custo-benefício</p>
+      <p class="seguranca">🔒 Checkout seguro • Processado pela SyncPay</p>
     </div>
 
   </div>
